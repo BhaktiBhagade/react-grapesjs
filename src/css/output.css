@@ -500,8 +500,85 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.inline {
-  display: inline;
+.static {
+  position: static;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.bg-\[\#FCFDFE\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 253 254 / var(--tw-bg-opacity));
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.placeholder-\[\#ACB6BE\]::-webkit-input-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(172 182 190 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-\[\#ACB6BE\]:-ms-input-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(172 182 190 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-\[\#ACB6BE\]::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(172 182 190 / var(--tw-placeholder-opacity));
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, -webkit-text-decoration-color, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 *,
@@ -2270,7 +2347,7 @@ input#checkboxLabelFive:checked ~ .box{
 
 .bg-primary{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(16, 103, 196 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -4128,7 +4205,7 @@ input:checked ~ .dot {
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(16, 103, 196 / var(--tw-bg-opacity));
 }
 
 input:checked ~ .dot .active {
@@ -4141,7 +4218,7 @@ input:checked ~ .dot .inactive {
 
 input#toggleFour:checked ~ .box{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(16, 103, 196 / var(--tw-bg-opacity));
 }
 
 input#toggleFour:checked ~ .dot {
@@ -4162,7 +4239,7 @@ input#toggleFive:checked ~ .dot {
 
 input#toggleFive:checked ~ .dot span{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(16, 103, 196 / var(--tw-bg-opacity));
 }
 
 input#toggleSix:checked ~ .dot {
@@ -4180,14 +4257,14 @@ input#toggleEight:checked ~ .box {
 
 input#toggleEight:checked ~ .dot{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(16, 103, 196 / var(--tw-bg-opacity));
 }
 
 input#toggleEight:checked ~ .dot span {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(16, 103, 196 / var(--tw-bg-opacity));
 }
 
 input#toggleNine:checked ~ .dot span {
@@ -4197,7 +4274,7 @@ input#toggleNine:checked ~ .dot span {
 
 input#toggleNine:checked ~ .dot{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(16, 103, 196 / var(--tw-bg-opacity));
 }
 
 input:checked ~ .box{
@@ -4212,7 +4289,7 @@ input#checkboxLabelOne:checked ~ .box{
 
 input#checkboxLabelOne:checked ~ .box .dot{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(16, 103, 196 / var(--tw-bg-opacity));
 }
 
 input#checkboxLabelTwo:checked ~ .box span {
@@ -4230,12 +4307,12 @@ input#checkboxLabelFour:checked ~ .box{
 
 input#checkboxLabelFour:checked ~ .box span{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(16, 103, 196 / var(--tw-bg-opacity));
 }
 
 input#checkboxLabelFive:checked ~ .box{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(16, 103, 196 / var(--tw-bg-opacity));
 }
 
 .shape-gradient {
@@ -4244,4 +4321,14 @@ input#checkboxLabelFive:checked ~ .box{
     rgba(255, 255, 255, 0.08) 0%,
     rgba(196, 196, 196, 0) 100%
   );
+}
+
+.hover\:bg-opacity-90:hover {
+  --tw-bg-opacity: 0.9;
+}
+
+.focus-visible\:shadow-none:focus-visible {
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }

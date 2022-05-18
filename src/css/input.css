@@ -1758,7 +1758,7 @@ input#checkboxLabelFive:checked ~ .box{
 
 .bg-primary{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(16, 103, 196 / var(--tw-bg-opacity));
 }
 
 .bg-white{

@@ -1,10 +1,15 @@
 import React, {useState,useEffect,Component} from 'react';
+// import grapejs from 'grapesjs';
 import grapejs from 'grapesjs';
-import gjsPresetWebpage from 'grapesjs-preset-webpage';
+import parserPostCSS from 'grapesjs-parser-postcss';
+import gjsTailwind from 'grapesjs-tailwind';
+import gjsCustomCode from  'grapesjs-custom-code';
+import gjsPresetWebpage from "grapesjs-preset-webpage";
+//import gjsPresetNewsletter from "grapesjs-preset-newsletter";
+
 import './styles/main.scss';
 import './css/output.css';
 import axios from "axios";
-import "grapesjs-preset-newsletter";
 import "grapesjs/dist/css/grapes.min.css";
 import PropTypes from "prop-types";
 import { Container } from "reactstrap";
@@ -80,9 +85,7 @@ return (
   width: "auto",
   showOffsets: 1,
   styleManager: { clearProperties: 1 },
-  canvas: {
-    styles: ['output.css'] 
-},
+  // canvas: {styles: ['output.css'] },
   // Avoid any default panel
   storageManager: {
     type: "remote",
@@ -92,9 +95,14 @@ return (
   },
 
   //components
-  plugins: [ 'grapesjs-tailwind',gjsPresetWebpage,"grapesjs-preset-newsletter"],
+  plugins: [ gjsTailwind ,gjsPresetWebpage,
+  gjsCustomCode,parserPostCSS ],
   pluginsOpts: {
     gjsPresetWebpage:{},
+    gjsTailwind: { /* options */ },
+   // gjsPresetNewsletter: { /* options */ },
+    parserPostCSS: { /* options */ },
+    gjsCustomCode: { /* options */ }
   }
 });
 export const initializeGrapeJs = (containerRef) => {
